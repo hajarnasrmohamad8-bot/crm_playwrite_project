@@ -2,7 +2,7 @@
 
 This repository contains end-to-end browser tests for CRM workflows in Odoo, written with Playwright and TypeScript. Page objects keep the browser interactions separate from test data and test orchestration.
 
-The current suite covers logging in, creating a customer, creating an opportunity, creating an activity plan, assigning that plan to an opportunity, and moving an opportunity through the **New**, **Proposition**, and **Won** pipeline stages. The opportunity and activity names are written to local JSON files by their setup tests and read by later workflow tests.
+The current suite covers logging in, creating a customer, creating an opportunity, creating an activity plan, assigning that plan to an opportunity, and moving an opportunity through the **New**, **Proposition**, and **Won** pipeline stages.
 
 ## Setup
 
