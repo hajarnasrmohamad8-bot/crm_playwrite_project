@@ -1,0 +1,23 @@
+name: Playwright Checks
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test-discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Create placeholder login data for test discovery
+        run: cp TestData/login_data.example.json TestData/login_data.json
+      - name: Verify Playwright can discover the tests
+        run: npx playwright test --list

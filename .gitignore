@@ -1,0 +1,18 @@
+
+# Playwright
+node_modules/
+/test-results/
+/test-results-*/
+/playwright-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/.env
+/.env.*
+!/.env.example
+
+TestData/login_data.json
+TestData/customer_data.json
+TestData/activity_data.json
+TestData/opportunity_data.json

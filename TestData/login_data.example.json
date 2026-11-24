@@ -1,0 +1,15 @@
+{
+  "loginCases": [
+    {
+      "type": "valid",
+      "username": "your-odoo-email@example.com",
+      "password": "replace-with-your-password"
+    },
+    {
+      "type": "invalid",
+      "username": "wrong_user@example.com",
+      "password": "wrong_password",
+      "expectedError": "Wrong login/password"
+    }
+  ]
+}
